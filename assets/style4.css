@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-auto-rows: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    background-color: black;
+    color: #fff;
+    border-radius: 6px;
+    padding: 15px;
+    font-family: 'Código-fonte Pro', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 200%;
+    height: 990px;
+    grid-template-areas:
+      "Header Header Header"
+      "Sidebar Main-Content Main-Content"
+      "Footer Footer Footer";
+  }
+  
+  .Header { grid-area: Header;
+    background-color: rgb(100, 10, 185);
+    border-radius: 20px;
+    align-content: center; }
+  
+  .Sidebar { grid-area: Sidebar; 
+    background-color: rgb(71, 71, 223);
+    border-radius: 20px;
+    align-content: center;}
+  
+  .Main-Content { grid-area: Main-Content;
+    background-color: deeppink;
+    border-radius: 20px;
+    align-content: center; }
+  
+  .Footer { grid-area: Footer;
+    background-color: rgba(73, 224, 73, 0.795);
+    border-radius: 20px;
+    align-content: center; }
+  
+  

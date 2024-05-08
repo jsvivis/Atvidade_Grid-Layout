@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.6fr 1.6fr 0.5fr;
+  grid-auto-rows: 1fr;
+  gap: 12px 12px;
+  grid-auto-flow: row;
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: 'Profissional Codigo Fonte', sans-serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 180%;
+  height: 1000px;
+  grid-template-areas:
+    "Header Header Header"
+    "Sidebar Content-1 Content-1"
+    "Sidebar Content-2 Content-3"
+    "Footer Footer Footer";
+}
+
+.Header { grid-area: Header;
+  background-color: orange;
+  border-radius: 3px;
+  align-content: center;}
+
+.Sidebar { grid-area: Sidebar;
+  background-color: rgba(235, 97, 47, 0.822);
+  border-radius: 3px;
+  align-content: center;}
+
+.Content-1 { grid-area: Content-1;
+  background-color: red;
+  border-radius: 3px;
+  align-content: center;}
+
+.Content-2 { grid-area: Content-2;
+  background-color: deeppink;
+  border-radius: 3px;
+  align-content: center;}
+
+.Content-3 { grid-area: Content-3;
+  background-color: deeppink;
+  border-radius: 3px;
+  align-content: center;}
+
+.Footer { grid-area: Footer;
+  background-color: orange;
+  border-radius: 3px;
+  align-content: center;}
